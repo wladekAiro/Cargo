@@ -5,7 +5,7 @@ package mycargo.wladek.com.mycargo.enums;
  */
 
 public enum  RegistrationType {
-    Shipper ("Shipper") , Transporter("Transporter");
+    Shippers("Shippers") , Transporters("Transporters");
 
     private String friendlyName;
 

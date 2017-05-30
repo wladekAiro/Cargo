@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import mycargo.wladek.com.mycargo.R;
 import mycargo.wladek.com.mycargo.databinding.ActivityHome2Binding;
-import mycargo.wladek.com.mycargo.enums.RegistrationType;
 import mycargo.wladek.com.mycargo.helpers.TokenDbHelper;
 import mycargo.wladek.com.mycargo.helpers.UserDbHelper;
 import mycargo.wladek.com.mycargo.pojo.BasicUser;
@@ -145,12 +144,15 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void resolveView(BasicUser basicUser){
-        if (basicUser.getRole().equals(RegistrationType.Shipper.name())){
-            viewBinding.layoutTransporterView.setVisibility(View.INVISIBLE);
+
+        System.out.println(" ++++ USEER ROLE ++++++ "+basicUser.getRole());
+
+        if (basicUser.getRole().equals("Transporters")){
+            viewBinding.layoutTransporterView.setVisibility(View.VISIBLE);
         }
 
-        if (basicUser.getRole().equals(RegistrationType.Transporter.name())){
-            viewBinding.layoutShipperView.setVisibility(View.INVISIBLE);
+        if (basicUser.getRole().equals("Shippers")){
+            viewBinding.layoutShipperView.setVisibility(View.VISIBLE);
         }
     }
 }

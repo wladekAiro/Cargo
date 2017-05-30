@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -200,96 +200,11 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/layoutShipperView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_marginBottom="3dp"
-                            android:layout_marginTop="3dp"
-                            android:background="#fff"
-                            android:elevation="4dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="200dp"
-                                android:layout_height="wrap_content"
-                                android:background="#fff"
-                                android:clickable="true"
-                                android:padding="20dp"
-                                android:text="Pin Number"/>
-
-                            <EditText
-                                android:id="@+id/inputPinNumber"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="right"
-                                android:layout_weight="1"/>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_marginBottom="3dp"
-                            android:layout_marginTop="3dp"
-                            android:background="#fff"
-                            android:elevation="4dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="200dp"
-                                android:layout_height="wrap_content"
-                                android:background="#fff"
-                                android:clickable="true"
-                                android:padding="20dp"
-                                android:text="Pin Document"/>
-
-                            <ImageButton
-                                android:id="@+id/input_pin_document"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="right"
-                                android:src="@drawable/attachment"
-                                android:layout_weight="1"/>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_marginBottom="3dp"
-                            android:layout_marginTop="3dp"
-                            android:background="#fff"
-                            android:elevation="4dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="200dp"
-                                android:layout_height="wrap_content"
-                                android:background="#fff"
-                                android:clickable="true"
-                                android:padding="20dp"
-                                android:text="Picture"/>
-
-                            <EditText
-                                android:id="@+id/input_picture"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="right"
-                                android:layout_weight="1"/>
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
                         android:id="@+id/layoutTransporterView"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:visibility="invisible">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -626,5 +541,5 @@
             <!--android:layout_margin="@dimen/fab_margin"-->
             <!--app:srcCompat="@mipmap/ic_ok" />-->
 
-    </android.support.design.widget.CoordinatorLayout>
+    </RelativeLayout>
 </layout>

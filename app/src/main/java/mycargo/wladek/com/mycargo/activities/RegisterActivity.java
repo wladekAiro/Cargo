@@ -104,7 +104,7 @@ public class RegisterActivity extends AppCompatActivity {
             userRegPojo.setLastName(lastName);
             userRegPojo.setPassword(password);
             userRegPojo.setConfirmPassword(confirmPassword);
-            userRegPojo.setRegistrationType(registrationType.name());
+            userRegPojo.setRegistrationType(registrationType.toString());
 
             submitRequest(userRegPojo);
         }
