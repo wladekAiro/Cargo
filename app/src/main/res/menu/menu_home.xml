@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mycargo.wladek.com.mycargo.activities.HomeActivity">
+    <item
+        android:id="@+id/action_ok"
+        android:orderInCategory="100"
+        android:title="Save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_setings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_password"
+        android:orderInCategory="100"
+        android:title="Change Password"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Log out"
+        app:showAsAction="collapseActionView" />
+</menu>
